@@ -22,14 +22,6 @@ var blocks1 = [
     {'size':50,	'allocated' : 30},
     {'size':50, 'allocated' : 35}
   ];
-  var blocks4 = [
-    {'size':50, 'allocated' : 10},
-    {'size':50, 'allocated' : 15},
-    {'size':50, 'allocated' : 20},
-    {'size':50, 'allocated' : 25},
-    {'size':50,	'allocated' : 30},
-    {'size':50, 'allocated' : 35}
-  ];
 
 function load() {
   

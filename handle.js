@@ -1,17 +1,16 @@
  function start(){
     var rawData = $("#inputData").val();
     var input = rawData.trim().split(',');
-    console.log(input);// LOL //console lol
+    console.log(input);
     firstFit(input);
 	bestFit(input);
 	worstFit(input);
-	//nextFit(input);
-    //print();
     
   }
 
   var nextMemIndex=0;
 
+//FIRSTFIT
   function firstFit(input) {
 		$(input).each(function (i, val) {
     	$(blocks1).each(function (j, m) {
@@ -24,13 +23,12 @@
     });
   }
 
+// BESTFIT
   function bestFit(input) {
 		$(input).each(function (i, val) {
-    	//the smallest fitting memory  
     	minSize = 9999;
       minIndex = -1;
     	$(blocks2).each(function (j,m) {
-      	//doesn't work, because wrong conditions
         freeMemory = m.size - m.allocated;
         if(+freeMemory - +val <= +minSize && +freeMemory - +val >= 0) {
         	minIndex = j;
@@ -41,6 +39,7 @@
     });
   }
 
+//WORSTFIT
   function worstFit(input) {
 		$(input).each(function (i, val) {
 			var largestMemIndex = 0;
@@ -63,14 +62,6 @@
       }
     });
     return largestIndex;
-  }
-
-  function nextFit(input) {
-		
-  }
-
-  function cycleFit(input) {
-
   }
   
   function print () {
