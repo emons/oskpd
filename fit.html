@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+        <script type="text/javascript" src="draw.js"></script>
+        <script type="text/javascript" src="handle.js"></script>
+    </head>
+<body>
+<input type="text" id="inputData"/>
+<button type="button" id="startButton">
+START
+</button>
+  <svg preserveAspectRatio="xMidYMid meet">
+    <g id="first-fit" transform="translate(0,0)">
+    </g>
+    <g id="next-fit" transform="translate(300,0)">
+    </g>
+    <g id="best-fit" transform="translate(600,0)">
+    </g>
+    <g id="worst-fit" transform="translate(900,0)">
+    </g>
+  </svg>
+</body>
+</html>
